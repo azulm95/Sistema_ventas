@@ -37,6 +37,8 @@
             this.btnconfiguracion = new System.Windows.Forms.ToolStripButton();
             this.tabVentas = new System.Windows.Forms.TabControl();
             this.tabFactura = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lbltotal = new System.Windows.Forms.Label();
             this.lblsubtotal = new System.Windows.Forms.Label();
@@ -52,12 +54,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtproducto = new System.Windows.Forms.TextBox();
             this.tabCarro = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dgCarro = new System.Windows.Forms.DataGridView();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.bagregar = new System.Windows.Forms.Button();
             this.Menu.SuspendLayout();
             this.tabVentas.SuspendLayout();
             this.tabFactura.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInventario)).BeginInit();
+            this.tabCarro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCarro)).BeginInit();
             this.SuspendLayout();
             // 
             // Menu
@@ -145,6 +150,25 @@
             this.tabFactura.TabIndex = 0;
             this.tabFactura.Text = "Facturas";
             this.tabFactura.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(83, 273);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(16, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "---";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(19, 273);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 15);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Usuario";
             // 
             // btnAgregar
             // 
@@ -277,6 +301,9 @@
             // 
             // tabCarro
             // 
+            this.tabCarro.Controls.Add(this.bagregar);
+            this.tabCarro.Controls.Add(this.btneliminar);
+            this.tabCarro.Controls.Add(this.dgCarro);
             this.tabCarro.Location = new System.Drawing.Point(4, 22);
             this.tabCarro.Name = "tabCarro";
             this.tabCarro.Padding = new System.Windows.Forms.Padding(3);
@@ -285,24 +312,31 @@
             this.tabCarro.Text = "Carro de compras";
             this.tabCarro.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // dgCarro
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(83, 273);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(16, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "---";
+            this.dgCarro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCarro.Location = new System.Drawing.Point(0, 0);
+            this.dgCarro.Name = "dgCarro";
+            this.dgCarro.Size = new System.Drawing.Size(689, 372);
+            this.dgCarro.TabIndex = 0;
             // 
-            // label8
+            // btneliminar
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 273);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 15);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Usuario";
+            this.btneliminar.Location = new System.Drawing.Point(700, 36);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(97, 23);
+            this.btneliminar.TabIndex = 1;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            // 
+            // bagregar
+            // 
+            this.bagregar.Location = new System.Drawing.Point(695, 298);
+            this.bagregar.Name = "bagregar";
+            this.bagregar.Size = new System.Drawing.Size(106, 47);
+            this.bagregar.TabIndex = 2;
+            this.bagregar.Text = "Agregar";
+            this.bagregar.UseVisualStyleBackColor = true;
             // 
             // frmVentas
             // 
@@ -320,6 +354,8 @@
             this.tabFactura.ResumeLayout(false);
             this.tabFactura.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInventario)).EndInit();
+            this.tabCarro.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgCarro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,5 +388,8 @@
         private System.Windows.Forms.TextBox txtproducto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button bagregar;
+        private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.DataGridView dgCarro;
     }
 }
