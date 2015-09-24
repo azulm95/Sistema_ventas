@@ -12,3 +12,6 @@ C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ven
 C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.Inventario.resources
 C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.csprojResolveAssemblyReference.cache
 C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmVentas.resources
+C:\Users\Carlos\Documents\GitHub\Sistema_ventas\Sistema_ventas\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\Carlos\Documents\GitHub\Sistema_ventas\Sistema_ventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Documents\GitHub\Sistema_ventas\Sistema_ventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
