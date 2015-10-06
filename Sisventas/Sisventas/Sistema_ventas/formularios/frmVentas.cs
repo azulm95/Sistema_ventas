@@ -143,6 +143,16 @@ namespace Sistema_ventas.formularios
             MessageBox.Show("Prodcto seleccionado: " + dgInventario.CurrentRow.Cells["nombre"].Value + " Precio: " + dgInventario.CurrentRow.Cells["precio"].Value);
         }
 
+        private void btnagregarcliente_Click(object sender, EventArgs e)
+        {
+            frmCliente c =  frmCliente();
+            c.Show();
+            dgcliente.DataSource ;
+
+
+
+        }
+
        
 
         

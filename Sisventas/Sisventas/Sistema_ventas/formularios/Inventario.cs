@@ -77,10 +77,11 @@ namespace Sistema_ventas.formularios
 
         }
 
+
         private void btnAgragar_Click(object sender, EventArgs e)
         {
             Validaciones v = new Validaciones();
-            if (v.ValidarTexto(gproductos)==0) {
+            if ((v.ValidarTexto(gproductos)==0)&&(dtfecha_ven.Value < DateTime.Now)) {
                 Productos p = new Productos();
             MessageBox.Show(p.AgregarProducto(txtnombre.Text, txtcodigo.Text, cbxmarca.SelectedValue.ToString(), txtdescripcion.Text, cbxclasificacion.SelectedValue.ToString(), txtprecio.Text,dtfecha_ven.Value));
             v.LimpiarTexto(gproductos);

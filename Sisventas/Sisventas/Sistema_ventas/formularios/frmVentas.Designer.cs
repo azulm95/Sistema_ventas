@@ -46,7 +46,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtnombre = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,12 +56,16 @@
             this.bagregar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
             this.dgCarro = new System.Windows.Forms.DataGridView();
+            this.btnagregarcliente = new System.Windows.Forms.Button();
+            this.lblnombrec = new System.Windows.Forms.Label();
+            this.dgcliente = new System.Windows.Forms.DataGridView();
             this.Menu3.SuspendLayout();
             this.tabVentas.SuspendLayout();
             this.tabFactura.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInventario)).BeginInit();
             this.tabCarro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCarro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgcliente)).BeginInit();
             this.SuspendLayout();
             // 
             // Menu3
@@ -75,7 +78,7 @@
             this.btnconfiguracion});
             this.Menu3.Location = new System.Drawing.Point(0, 0);
             this.Menu3.Name = "Menu3";
-            this.Menu3.Size = new System.Drawing.Size(994, 25);
+            this.Menu3.Size = new System.Drawing.Size(1067, 25);
             this.Menu3.TabIndex = 1;
             this.Menu3.Text = "Menu";
             // 
@@ -122,11 +125,14 @@
             this.tabVentas.Location = new System.Drawing.Point(0, 29);
             this.tabVentas.Name = "tabVentas";
             this.tabVentas.SelectedIndex = 0;
-            this.tabVentas.Size = new System.Drawing.Size(994, 398);
+            this.tabVentas.Size = new System.Drawing.Size(1067, 398);
             this.tabVentas.TabIndex = 2;
             // 
             // tabFactura
             // 
+            this.tabFactura.Controls.Add(this.dgcliente);
+            this.tabFactura.Controls.Add(this.lblnombrec);
+            this.tabFactura.Controls.Add(this.btnagregarcliente);
             this.tabFactura.Controls.Add(this.label7);
             this.tabFactura.Controls.Add(this.label8);
             this.tabFactura.Controls.Add(this.btnAgregar);
@@ -136,7 +142,6 @@
             this.tabFactura.Controls.Add(this.checkBox1);
             this.tabFactura.Controls.Add(this.label5);
             this.tabFactura.Controls.Add(this.label3);
-            this.tabFactura.Controls.Add(this.txtnombre);
             this.tabFactura.Controls.Add(this.lblCodigo);
             this.tabFactura.Controls.Add(this.label4);
             this.tabFactura.Controls.Add(this.label2);
@@ -146,7 +151,7 @@
             this.tabFactura.Location = new System.Drawing.Point(4, 22);
             this.tabFactura.Name = "tabFactura";
             this.tabFactura.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFactura.Size = new System.Drawing.Size(986, 372);
+            this.tabFactura.Size = new System.Drawing.Size(1059, 372);
             this.tabFactura.TabIndex = 0;
             this.tabFactura.Text = "Facturas";
             this.tabFactura.UseVisualStyleBackColor = true;
@@ -237,13 +242,6 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Sub Total:";
             // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(133, 115);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(274, 20);
-            this.txtnombre.TabIndex = 11;
-            // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
@@ -278,7 +276,7 @@
             this.dgInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgInventario.Location = new System.Drawing.Point(419, 6);
             this.dgInventario.Name = "dgInventario";
-            this.dgInventario.Size = new System.Drawing.Size(564, 357);
+            this.dgInventario.Size = new System.Drawing.Size(632, 357);
             this.dgInventario.TabIndex = 2;
             this.dgInventario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgInventario_CellClick);
             // 
@@ -308,23 +306,23 @@
             this.tabCarro.Location = new System.Drawing.Point(4, 22);
             this.tabCarro.Name = "tabCarro";
             this.tabCarro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCarro.Size = new System.Drawing.Size(986, 372);
+            this.tabCarro.Size = new System.Drawing.Size(1059, 372);
             this.tabCarro.TabIndex = 1;
             this.tabCarro.Text = "Carro de compras";
             this.tabCarro.UseVisualStyleBackColor = true;
             // 
             // bagregar
             // 
-            this.bagregar.Location = new System.Drawing.Point(695, 298);
+            this.bagregar.Location = new System.Drawing.Point(945, 316);
             this.bagregar.Name = "bagregar";
             this.bagregar.Size = new System.Drawing.Size(106, 47);
             this.bagregar.TabIndex = 2;
-            this.bagregar.Text = "Agregar";
+            this.bagregar.Text = "Comprar";
             this.bagregar.UseVisualStyleBackColor = true;
             // 
             // btneliminar
             // 
-            this.btneliminar.Location = new System.Drawing.Point(700, 36);
+            this.btneliminar.Location = new System.Drawing.Point(945, 45);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(97, 23);
             this.btneliminar.TabIndex = 1;
@@ -336,14 +334,42 @@
             this.dgCarro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCarro.Location = new System.Drawing.Point(0, 0);
             this.dgCarro.Name = "dgCarro";
-            this.dgCarro.Size = new System.Drawing.Size(689, 372);
+            this.dgCarro.Size = new System.Drawing.Size(927, 372);
             this.dgCarro.TabIndex = 0;
+            // 
+            // btnagregarcliente
+            // 
+            this.btnagregarcliente.Location = new System.Drawing.Point(293, 116);
+            this.btnagregarcliente.Name = "btnagregarcliente";
+            this.btnagregarcliente.Size = new System.Drawing.Size(120, 23);
+            this.btnagregarcliente.TabIndex = 21;
+            this.btnagregarcliente.Text = "Agregar Cliente";
+            this.btnagregarcliente.UseVisualStyleBackColor = true;
+            this.btnagregarcliente.Click += new System.EventHandler(this.btnagregarcliente_Click);
+            // 
+            // lblnombrec
+            // 
+            this.lblnombrec.AutoSize = true;
+            this.lblnombrec.Location = new System.Drawing.Point(138, 122);
+            this.lblnombrec.Name = "lblnombrec";
+            this.lblnombrec.Size = new System.Drawing.Size(13, 13);
+            this.lblnombrec.TabIndex = 22;
+            this.lblnombrec.Text = "--";
+            // 
+            // dgcliente
+            // 
+            this.dgcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgcliente.Location = new System.Drawing.Point(22, 305);
+            this.dgcliente.Name = "dgcliente";
+            this.dgcliente.Size = new System.Drawing.Size(50, 61);
+            this.dgcliente.TabIndex = 23;
+            this.dgcliente.Visible = false;
             // 
             // frmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 426);
+            this.ClientSize = new System.Drawing.Size(1067, 426);
             this.Controls.Add(this.tabVentas);
             this.Controls.Add(this.Menu3);
             this.Name = "frmVentas";
@@ -357,6 +383,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgInventario)).EndInit();
             this.tabCarro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgCarro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgcliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,7 +407,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
@@ -392,5 +418,8 @@
         private System.Windows.Forms.Button bagregar;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.DataGridView dgCarro;
+        private System.Windows.Forms.Label lblnombrec;
+        private System.Windows.Forms.Button btnagregarcliente;
+        private System.Windows.Forms.DataGridView dgcliente;
     }
 }

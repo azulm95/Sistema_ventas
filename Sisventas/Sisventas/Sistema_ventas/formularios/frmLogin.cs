@@ -20,6 +20,15 @@ namespace Sistema_ventas
             InitializeComponent();
         }
 
+
+        public static string Encriptar(this string _cadenaAencriptar)
+        {
+            string result = string.Empty;
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(_cadenaAencriptar);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
+
         private void btningresar_Click(object sender, EventArgs e){
         Conexion canal = new Conexion();
         Validaciones validar = new Validaciones();
@@ -29,7 +38,7 @@ namespace Sistema_ventas
             DataTable tb = new DataTable();
             MySqlCommand parametro =  new MySqlCommand();
             parametro.Parameters.AddWithValue("@nombre", txtnombre.Text);
-            parametro.Parameters.AddWithValue("@clave",txtclave.Text);
+            parametro.Parameters.AddWithValue("@clave",Encriptar(txtclave.Text));
             String sentencia = "SELECT *  FROM tbl_usuarios WHERE nombre=@nombre AND clave=@clave;";
             tb = canal.ConsultaMySQL(sentencia,parametro.Parameters,CommandType.Text);
              
