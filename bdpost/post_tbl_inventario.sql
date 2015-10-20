@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `post` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `post`;
 -- MySQL dump 10.13  Distrib 5.6.24, for Win64 (x86_64)
 --
 -- Host: localhost    Database: post
@@ -25,11 +23,13 @@ DROP TABLE IF EXISTS `tbl_inventario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tbl_inventario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_producto` varchar(25) NOT NULL,
   `existencia` int(11) NOT NULL,
-  PRIMARY KEY (`id_producto`),
-  CONSTRAINT `fk_productos_invetario` FOREIGN KEY (`id_producto`) REFERENCES `tbl_productos` (`codigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `fk_producto_invent_idx` (`id_producto`),
+  CONSTRAINT `fk_producto_invent` FOREIGN KEY (`id_producto`) REFERENCES `tbl_producto` (`codigo`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,6 +38,7 @@ CREATE TABLE `tbl_inventario` (
 
 LOCK TABLES `tbl_inventario` WRITE;
 /*!40000 ALTER TABLE `tbl_inventario` DISABLE KEYS */;
+INSERT INTO `tbl_inventario` VALUES (1,'a',123),(2,'sad46',12),(3,'sfgw4256',124);
 /*!40000 ALTER TABLE `tbl_inventario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-09-08  2:02:32
+-- Dump completed on 2015-10-20  6:29:07

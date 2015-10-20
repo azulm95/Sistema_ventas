@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `post` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `post`;
 -- MySQL dump 10.13  Distrib 5.6.24, for Win64 (x86_64)
 --
 -- Host: localhost    Database: post
@@ -29,7 +27,7 @@ CREATE TABLE `tbl_producto` (
   `nombre` varchar(45) NOT NULL,
   `marca` varchar(45) NOT NULL,
   `id_clasificacion` int(11) NOT NULL,
-  `fecha_vencimiento` date DEFAULT NULL,
+  `fecha_vencimiento` varchar(10) DEFAULT NULL,
   `descripcion` varchar(100) DEFAULT NULL,
   `precio` decimal(10,4) NOT NULL,
   PRIMARY KEY (`codigo`),
@@ -44,7 +42,7 @@ CREATE TABLE `tbl_producto` (
 
 LOCK TABLES `tbl_producto` WRITE;
 /*!40000 ALTER TABLE `tbl_producto` DISABLE KEYS */;
-INSERT INTO `tbl_producto` VALUES ('jlhlk','jgljgl','1',1,'2015-09-08','hgfkjfjkf',123.0000);
+INSERT INTO `tbl_producto` VALUES ('a','asdaf','1',1,'2015-09-30','asdf',12.0000),('sad46','p','1',1,'-','osugsdfhgjf',1213.0000),('sfgw4256','p1','1',1,'-','ktrs',12345.0000);
 /*!40000 ALTER TABLE `tbl_producto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-09-08  2:02:32
+-- Dump completed on 2015-10-20  6:29:08
