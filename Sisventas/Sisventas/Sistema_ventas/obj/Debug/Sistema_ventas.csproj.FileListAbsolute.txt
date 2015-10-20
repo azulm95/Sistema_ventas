@@ -29,6 +29,11 @@ C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug
 C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.MenuPrincipal.resources
 C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Properties.Resources.resources
 C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csproj.GenerateResource.Cache
-C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
-C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
-C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmClientes.resources
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.frmLogin.resources
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmVentas.resources
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.Inventario.resources
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.MenuPrincipal.resources
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Properties.Resources.resources
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csproj.GenerateResource.Cache

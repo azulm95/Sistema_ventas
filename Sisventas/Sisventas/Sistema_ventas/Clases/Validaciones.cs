@@ -17,7 +17,13 @@ namespace Sistema_ventas.Clases
                 {
                     k = k + 1;
                 }
+                else {
+                    if (((TextBox)item).Text == String.Empty)
+                    {
                 
+                
+                    }
+                }
        
             }
         }

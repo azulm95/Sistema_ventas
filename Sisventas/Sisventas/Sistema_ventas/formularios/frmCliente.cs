@@ -9,125 +9,178 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_ventas.Clases;
 using MySql.Data.MySqlClient;
-using Sistema_ventas.formularios;
-
-
 namespace Sistema_ventas.formularios
 {
-    public partial class frmCliente : Form
+    public partial class frmClientes : Form
     {
-        
-       
-        public frmCliente()
+        public frmClientes()
         {
             InitializeComponent();
         }
 
-        private void btnagregar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Validaciones v =  new Validaciones();
-            if(v.ValidarTexto(groupBox1) == 0){
+            Validaciones v = new Validaciones();
             Conexion c = new Conexion();
-                c.Conectar();
-               MySqlCommand parametros = new MySqlCommand();
-                parametros.Parameters.AddWithValue("p_nombre",txtnombre.Text);
-                parametros.Parameters.AddWithValue("p_apellido",txtapellido.Text);
-                parametros.Parameters.AddWithValue("p_empresa",txtempresa.Text);
-                parametros.Parameters.AddWithValue("p_direccion",txtdireccion.Text);
-                parametros.Parameters.AddWithValue("p_ciudad",txtciudad.Text);
-                parametros.Parameters.AddWithValue("p_telefono",txttelefono.Text);
-                parametros.Parameters.AddWithValue("p_tipo",cbxtipo.SelectedText);
-                parametros.Parameters.AddWithValue("p_correo",txtcorreo);
-                c.TransaccionMysql("Insertar_Cliente",parametros.Parameters,CommandType.StoredProcedure);
+            MySqlCommand parametros = new MySqlCommand();
 
+            if (v.ValidarTexto(gbpaciente) == 0) {
+                c.Conectar();
+                parametros.Parameters.AddWithValue("@nombre",txtnombre.Text);
+                parametros.Parameters.AddWithValue("@apellido", txtapellido.Text);
+                parametros.Parameters.AddWithValue("@empresa", txtempresa.Text);
+                parametros.Parameters.AddWithValue("@direccion", txtdireccion.Text);
+                parametros.Parameters.AddWithValue("@ciudad", txtciudad.Text);
+                parametros.Parameters.AddWithValue("@tipo", txttipo.Text);
+                parametros.Parameters.AddWithValue("@telefono", txttelefono.Text);
+                parametros.Parameters.AddWithValue("@correo", txtcorreo.Text);
+                parametros.Parameters.AddWithValue("@cedula", txtcedula.Text);
+
+                if (c.TransaccionMysql("Insertar_Cliente", parametros.Parameters, CommandType.StoredProcedure)) { 
+            
+                
+                }
+                
                 c.Desconectar();
 
-                
-
-            
             }
-          
 
 
 
 
+        }
 
+        private void txtcedula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
 
+            }
+            else {
+
+                e.Handled = true;
+            }
+        
+        
         }
 
         private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsLetterOrDigit(e.KeyChar)){
-          
-      
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
             }
-                            
-                            
-            public DataTable AgregarCliente(){
-            DataTable dt = new DataTable();
-             
+            else {
 
-            
-            
-            return null;}
-                
-                            }
-
-        private void btnseleccionar_Click(object sender, EventArgs e)
-        {
-            
-
-
-
-
+                e.Handled = true;
+            }
 
 
 
 
         }
 
-        private void txtnombre_Leave(object sender, EventArgs e)
+        private void txtapellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if((txtnombre.Text != null)||(txtnombre.Text != " ")){
-             Conexion c = new Conexion();
-                MySqlCommand param = new MySqlCommand();
 
-                param.Parameters.AddWithValue("p_parametro",txtnombre.Text +" %");
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
 
-                DataTable dt = new DataTable();
-                c.Conectar();
+                e.Handled = true;
+            }
+        }
 
-               dt = c.ConsultaMySQL("Consulta_cliente",param.Parameters,CommandType.StoredProcedure);
-                    if(dt != null){
+        private void txtempresa_KeyPress(object sender, KeyPressEventArgs e)
+        {
 
-                       txtnombre.Text =Convert.ToString(dt.Rows[0][0]);
-                       txtapellido.Text =Convert.ToString(dt.Rows[1][0]);
-                       txtempresa.Text =Convert.ToString(dt.Rows[2][0]);
-                        txtdireccion.Text= Convert.ToString(dt.Rows[3][0]);
-                       txtciudad.Text = Convert.ToString(dt.Rows[4][0]);
-                        txttelefono.Text =Convert.ToString(dt.Rows[5][0]);
-                         txtcorreo.Text =Convert.ToString(dt.Rows[6][0]);            
-                c.Desconectar();
-                    }
-                    
+            if (char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+            }
+        }
+
+        private void txtdireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+            }
+        }
+
+        private void txtciudad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+            }
+        }
+
+        private void txttipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+            }
+        }
+
+        private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+            }
+        }
+
+        private void txtcorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+            }
+        }
+
         
-                                c.Desconectar();    
-        }
-        }
 
-
-                        }
-
-
-
-                    }
-
-
-            
-            
-            }
-        }
-
-      
+       
     }
 }

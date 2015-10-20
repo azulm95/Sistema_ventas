@@ -37,6 +37,9 @@
             this.btnconfiguracion = new System.Windows.Forms.ToolStripButton();
             this.tabVentas = new System.Windows.Forms.TabControl();
             this.tabFactura = new System.Windows.Forms.TabPage();
+            this.dgcliente = new System.Windows.Forms.DataGridView();
+            this.lblnombrec = new System.Windows.Forms.Label();
+            this.btnagregarcliente = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -56,16 +59,13 @@
             this.bagregar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
             this.dgCarro = new System.Windows.Forms.DataGridView();
-            this.btnagregarcliente = new System.Windows.Forms.Button();
-            this.lblnombrec = new System.Windows.Forms.Label();
-            this.dgcliente = new System.Windows.Forms.DataGridView();
             this.Menu3.SuspendLayout();
             this.tabVentas.SuspendLayout();
             this.tabFactura.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgcliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgInventario)).BeginInit();
             this.tabCarro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCarro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgcliente)).BeginInit();
             this.SuspendLayout();
             // 
             // Menu3
@@ -155,6 +155,34 @@
             this.tabFactura.TabIndex = 0;
             this.tabFactura.Text = "Facturas";
             this.tabFactura.UseVisualStyleBackColor = true;
+            // 
+            // dgcliente
+            // 
+            this.dgcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgcliente.Location = new System.Drawing.Point(22, 305);
+            this.dgcliente.Name = "dgcliente";
+            this.dgcliente.Size = new System.Drawing.Size(50, 61);
+            this.dgcliente.TabIndex = 23;
+            this.dgcliente.Visible = false;
+            // 
+            // lblnombrec
+            // 
+            this.lblnombrec.AutoSize = true;
+            this.lblnombrec.Location = new System.Drawing.Point(138, 122);
+            this.lblnombrec.Name = "lblnombrec";
+            this.lblnombrec.Size = new System.Drawing.Size(13, 13);
+            this.lblnombrec.TabIndex = 22;
+            this.lblnombrec.Text = "--";
+            // 
+            // btnagregarcliente
+            // 
+            this.btnagregarcliente.Location = new System.Drawing.Point(293, 116);
+            this.btnagregarcliente.Name = "btnagregarcliente";
+            this.btnagregarcliente.Size = new System.Drawing.Size(120, 23);
+            this.btnagregarcliente.TabIndex = 21;
+            this.btnagregarcliente.Text = "Agregar Cliente";
+            this.btnagregarcliente.UseVisualStyleBackColor = true;
+            this.btnagregarcliente.Click += new System.EventHandler(this.btnagregarcliente_Click);
             // 
             // label7
             // 
@@ -337,34 +365,6 @@
             this.dgCarro.Size = new System.Drawing.Size(927, 372);
             this.dgCarro.TabIndex = 0;
             // 
-            // btnagregarcliente
-            // 
-            this.btnagregarcliente.Location = new System.Drawing.Point(293, 116);
-            this.btnagregarcliente.Name = "btnagregarcliente";
-            this.btnagregarcliente.Size = new System.Drawing.Size(120, 23);
-            this.btnagregarcliente.TabIndex = 21;
-            this.btnagregarcliente.Text = "Agregar Cliente";
-            this.btnagregarcliente.UseVisualStyleBackColor = true;
-            this.btnagregarcliente.Click += new System.EventHandler(this.btnagregarcliente_Click);
-            // 
-            // lblnombrec
-            // 
-            this.lblnombrec.AutoSize = true;
-            this.lblnombrec.Location = new System.Drawing.Point(138, 122);
-            this.lblnombrec.Name = "lblnombrec";
-            this.lblnombrec.Size = new System.Drawing.Size(13, 13);
-            this.lblnombrec.TabIndex = 22;
-            this.lblnombrec.Text = "--";
-            // 
-            // dgcliente
-            // 
-            this.dgcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgcliente.Location = new System.Drawing.Point(22, 305);
-            this.dgcliente.Name = "dgcliente";
-            this.dgcliente.Size = new System.Drawing.Size(50, 61);
-            this.dgcliente.TabIndex = 23;
-            this.dgcliente.Visible = false;
-            // 
             // frmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,10 +380,10 @@
             this.tabVentas.ResumeLayout(false);
             this.tabFactura.ResumeLayout(false);
             this.tabFactura.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgcliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgInventario)).EndInit();
             this.tabCarro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgCarro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgcliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,8 +418,8 @@
         private System.Windows.Forms.Button bagregar;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.DataGridView dgCarro;
-        private System.Windows.Forms.Label lblnombrec;
         private System.Windows.Forms.Button btnagregarcliente;
         private System.Windows.Forms.DataGridView dgcliente;
+        public System.Windows.Forms.Label lblnombrec;
     }
 }

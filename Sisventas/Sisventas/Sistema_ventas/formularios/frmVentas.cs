@@ -19,8 +19,8 @@ namespace Sistema_ventas.formularios
         private String rol;
         private int _Existencias;
         private DataTable productos;
-        private DataRow columna; 
-
+        private DataRow columna;
+        public  String[] vec;
 
 
         public int Existencias
@@ -145,9 +145,8 @@ namespace Sistema_ventas.formularios
 
         private void btnagregarcliente_Click(object sender, EventArgs e)
         {
-            frmCliente c =  frmCliente();
+            frmClientes c = new frmClientes();
             c.Show();
-            dgcliente.DataSource ;
 
 
 

@@ -1,6 +1,6 @@
 ﻿namespace Sistema_ventas
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -100,9 +100,8 @@
             this.ClientSize = new System.Drawing.Size(344, 263);
             this.Controls.Add(this.gblogin);
             this.Controls.Add(this.btningresar);
-            this.Name = "Form1";
+            this.Name = "frmLogin";
             this.Text = "Login";
-           
             this.gblogin.ResumeLayout(false);
             this.gblogin.PerformLayout();
             this.ResumeLayout(false);
