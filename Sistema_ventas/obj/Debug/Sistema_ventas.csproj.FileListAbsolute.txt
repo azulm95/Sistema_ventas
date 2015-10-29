@@ -1,0 +1,55 @@
+c:\users\carlos\documents\visual studio 2013\Projects\Sistema_ventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.Form1.resources
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.Properties.Resources.resources
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\bin\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.MenuPrincipal.resources
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.Inventario.resources
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\Visual Studio 2013\Projects\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmVentas.resources
+C:\Users\Carlos\Documents\GitHub\Sistema_ventas\Sistema_ventas\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\Carlos\Documents\GitHub\Sistema_ventas\Sistema_ventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Documents\GitHub\Sistema_ventas\Sistema_ventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Form1.resources
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmVentas.resources
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.Inventario.resources
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.MenuPrincipal.resources
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Properties.Resources.resources
+C:\Users\Carlos\Desktop\Sistema_ventas-master\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csproj.GenerateResource.Cache
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\juand\Documents\Sistema_ventas-43720a860452d0e8a6c70d64da5eea682142fcd2\Sisventas\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\juand\Documents\Sistema_ventas-43720a860452d0e8a6c70d64da5eea682142fcd2\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\juand\Documents\Sistema_ventas-43720a860452d0e8a6c70d64da5eea682142fcd2\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmClientes.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Form1.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmVentas.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.Inventario.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.MenuPrincipal.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Properties.Resources.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csproj.GenerateResource.Cache
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\bin\Debug\MySql.Data.dll
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmProductos.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Controles.mdProducto.resources
+C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csprojResolveAssemblyReference.cache
