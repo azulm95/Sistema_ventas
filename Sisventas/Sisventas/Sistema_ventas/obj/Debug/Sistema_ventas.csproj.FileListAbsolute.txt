@@ -37,3 +37,4 @@ C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\De
 C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.MenuPrincipal.resources
 C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Properties.Resources.resources
 C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csproj.GenerateResource.Cache
+C:\Users\Carlos\Desktop\Sistema_ventas\Sisventas\Sisventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
