@@ -36,15 +36,15 @@
             this.btnsalir = new System.Windows.Forms.ToolStripButton();
             this.btnconfiguracion = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblnomprove = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblproducto = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ncantidad = new System.Windows.Forms.NumericUpDown();
-            this.btnprove = new System.Windows.Forms.Button();
-            this.btnproducto = new System.Windows.Forms.Button();
             this.btnpedido = new System.Windows.Forms.Button();
+            this.btnproducto = new System.Windows.Forms.Button();
+            this.btnprove = new System.Windows.Forms.Button();
+            this.ncantidad = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblproducto = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblnomprove = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Menu4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ncantidad)).BeginInit();
@@ -89,6 +89,7 @@
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 22);
             this.btnsalir.Text = "Salir";
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // btnconfiguracion
             // 
@@ -117,67 +118,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de compra";
             // 
-            // label1
+            // btnpedido
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre del proveedor";
-            // 
-            // lblnomprove
-            // 
-            this.lblnomprove.AutoSize = true;
-            this.lblnomprove.Location = new System.Drawing.Point(149, 40);
-            this.lblnomprove.Name = "lblnomprove";
-            this.lblnomprove.Size = new System.Drawing.Size(13, 13);
-            this.lblnomprove.TabIndex = 1;
-            this.lblnomprove.Text = "--";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre del producto";
-            // 
-            // lblproducto
-            // 
-            this.lblproducto.AutoSize = true;
-            this.lblproducto.Location = new System.Drawing.Point(149, 71);
-            this.lblproducto.Name = "lblproducto";
-            this.lblproducto.Size = new System.Drawing.Size(13, 13);
-            this.lblproducto.TabIndex = 3;
-            this.lblproducto.Text = "--";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Cantidad solicitada";
-            // 
-            // ncantidad
-            // 
-            this.ncantidad.Location = new System.Drawing.Point(133, 97);
-            this.ncantidad.Name = "ncantidad";
-            this.ncantidad.Size = new System.Drawing.Size(49, 20);
-            this.ncantidad.TabIndex = 5;
-            // 
-            // btnprove
-            // 
-            this.btnprove.Location = new System.Drawing.Point(240, 35);
-            this.btnprove.Name = "btnprove";
-            this.btnprove.Size = new System.Drawing.Size(147, 23);
-            this.btnprove.TabIndex = 6;
-            this.btnprove.Text = "Agregar Proveedor";
-            this.btnprove.UseVisualStyleBackColor = true;
-            this.btnprove.Click += new System.EventHandler(this.btnprove_Click);
+            this.btnpedido.Location = new System.Drawing.Point(240, 154);
+            this.btnpedido.Name = "btnpedido";
+            this.btnpedido.Size = new System.Drawing.Size(148, 23);
+            this.btnpedido.TabIndex = 8;
+            this.btnpedido.Text = "Realizar pedido";
+            this.btnpedido.UseVisualStyleBackColor = true;
+            this.btnpedido.Click += new System.EventHandler(this.btnpedido_Click);
             // 
             // btnproducto
             // 
@@ -189,15 +138,67 @@
             this.btnproducto.UseVisualStyleBackColor = true;
             this.btnproducto.Click += new System.EventHandler(this.btnproducto_Click);
             // 
-            // btnpedido
+            // btnprove
             // 
-            this.btnpedido.Location = new System.Drawing.Point(240, 154);
-            this.btnpedido.Name = "btnpedido";
-            this.btnpedido.Size = new System.Drawing.Size(148, 23);
-            this.btnpedido.TabIndex = 8;
-            this.btnpedido.Text = "Realizar pedido";
-            this.btnpedido.UseVisualStyleBackColor = true;
-            this.btnpedido.Click += new System.EventHandler(this.btnpedido_Click);
+            this.btnprove.Location = new System.Drawing.Point(240, 35);
+            this.btnprove.Name = "btnprove";
+            this.btnprove.Size = new System.Drawing.Size(147, 23);
+            this.btnprove.TabIndex = 6;
+            this.btnprove.Text = "Agregar Proveedor";
+            this.btnprove.UseVisualStyleBackColor = true;
+            this.btnprove.Click += new System.EventHandler(this.btnprove_Click);
+            // 
+            // ncantidad
+            // 
+            this.ncantidad.Location = new System.Drawing.Point(133, 97);
+            this.ncantidad.Name = "ncantidad";
+            this.ncantidad.Size = new System.Drawing.Size(49, 20);
+            this.ncantidad.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Cantidad solicitada";
+            // 
+            // lblproducto
+            // 
+            this.lblproducto.AutoSize = true;
+            this.lblproducto.Location = new System.Drawing.Point(149, 71);
+            this.lblproducto.Name = "lblproducto";
+            this.lblproducto.Size = new System.Drawing.Size(13, 13);
+            this.lblproducto.TabIndex = 3;
+            this.lblproducto.Text = "--";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nombre del producto";
+            // 
+            // lblnomprove
+            // 
+            this.lblnomprove.AutoSize = true;
+            this.lblnomprove.Location = new System.Drawing.Point(149, 40);
+            this.lblnomprove.Name = "lblnomprove";
+            this.lblnomprove.Size = new System.Drawing.Size(13, 13);
+            this.lblnomprove.TabIndex = 1;
+            this.lblnomprove.Text = "--";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre del proveedor";
             // 
             // frmComprasProveedores
             // 

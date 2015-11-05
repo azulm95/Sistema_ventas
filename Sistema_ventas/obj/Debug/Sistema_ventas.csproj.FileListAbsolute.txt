@@ -53,3 +53,6 @@ C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb
 C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.formularios.frmProductos.resources
 C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.Controles.mdProducto.resources
 C:\Users\Carlos\Desktop\Sisventas\Sistema_ventas\obj\Debug\Sistema_ventas.csprojResolveAssemblyReference.cache
+C:\Users\juand\Desktop\Sistema_ventas\Sistema_ventas\bin\Debug\Sistema_ventas.exe.config
+C:\Users\juand\Desktop\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.exe
+C:\Users\juand\Desktop\Sistema_ventas\Sistema_ventas\obj\Debug\Sistema_ventas.pdb

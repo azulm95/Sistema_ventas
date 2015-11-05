@@ -72,6 +72,11 @@ namespace Sistema_ventas.formularios
 
 
         }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 
 }
