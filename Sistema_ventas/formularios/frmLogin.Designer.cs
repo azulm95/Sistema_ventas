@@ -42,10 +42,10 @@
             // 
             this.btningresar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btningresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btningresar.BackgroundImage")));
-            this.btningresar.ForeColor = System.Drawing.Color.Black;
+            this.btningresar.ForeColor = System.Drawing.Color.Transparent;
             this.btningresar.Image = ((System.Drawing.Image)(resources.GetObject("btningresar.Image")));
             this.btningresar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btningresar.Location = new System.Drawing.Point(50, 203);
+            this.btningresar.Location = new System.Drawing.Point(116, 313);
             this.btningresar.Name = "btningresar";
             this.btningresar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btningresar.Size = new System.Drawing.Size(239, 38);
@@ -66,7 +66,7 @@
             this.gblogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gblogin.Location = new System.Drawing.Point(-1, 1);
             this.gblogin.Name = "gblogin";
-            this.gblogin.Size = new System.Drawing.Size(345, 264);
+            this.gblogin.Size = new System.Drawing.Size(479, 392);
             this.gblogin.TabIndex = 3;
             this.gblogin.TabStop = false;
             this.gblogin.Text = "Datos del usuario";
@@ -75,10 +75,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(13, 117);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(6, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 22);
             this.label2.TabIndex = 8;
@@ -88,9 +87,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(13, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 22);
@@ -100,8 +98,9 @@
             // 
             // txtclave
             // 
+            this.txtclave.BackColor = System.Drawing.Color.White;
             this.txtclave.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtclave.Location = new System.Drawing.Point(14, 142);
+            this.txtclave.Location = new System.Drawing.Point(6, 169);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(199, 22);
             this.txtclave.TabIndex = 6;
@@ -109,12 +108,12 @@
             // 
             // txtnombre
             // 
-            this.txtnombre.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtnombre.BackColor = System.Drawing.Color.White;
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtnombre.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtnombre.Location = new System.Drawing.Point(13, 64);
+            this.txtnombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtnombre.Location = new System.Drawing.Point(10, 64);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(199, 22);
+            this.txtnombre.Size = new System.Drawing.Size(192, 22);
             this.txtnombre.TabIndex = 5;
             // 
             // Form1
@@ -122,7 +121,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(344, 263);
+            this.ClientSize = new System.Drawing.Size(477, 392);
             this.Controls.Add(this.gblogin);
             this.Name = "Form1";
             this.Text = "Login";

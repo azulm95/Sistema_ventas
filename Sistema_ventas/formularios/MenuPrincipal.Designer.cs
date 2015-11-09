@@ -70,7 +70,7 @@
             this.btnconfiguracion});
             this.Menu1.Location = new System.Drawing.Point(0, 0);
             this.Menu1.Name = "Menu1";
-            this.Menu1.Size = new System.Drawing.Size(549, 25);
+            this.Menu1.Size = new System.Drawing.Size(631, 25);
             this.Menu1.TabIndex = 0;
             this.Menu1.Text = "Menu";
             // 
@@ -99,7 +99,7 @@
             this.btnInventario.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnInventario.Image")));
-            this.btnInventario.Location = new System.Drawing.Point(58, 109);
+            this.btnInventario.Location = new System.Drawing.Point(67, 64);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(97, 91);
             this.btnInventario.TabIndex = 1;
@@ -112,9 +112,9 @@
             this.btnVentas.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentas.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
-            this.btnVentas.Location = new System.Drawing.Point(161, 109);
+            this.btnVentas.Location = new System.Drawing.Point(67, 175);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(106, 91);
+            this.btnVentas.Size = new System.Drawing.Size(97, 91);
             this.btnVentas.TabIndex = 2;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@
             this.btnReportes.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
-            this.btnReportes.Location = new System.Drawing.Point(399, 110);
+            this.btnReportes.Location = new System.Drawing.Point(470, 64);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(101, 90);
             this.btnReportes.TabIndex = 4;
@@ -138,9 +138,9 @@
             this.btnCompras.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnCompras.Image = ((System.Drawing.Image)(resources.GetObject("btnCompras.Image")));
             this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCompras.Location = new System.Drawing.Point(274, 109);
+            this.btnCompras.Location = new System.Drawing.Point(470, 175);
             this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(119, 91);
+            this.btnCompras.Size = new System.Drawing.Size(101, 91);
             this.btnCompras.TabIndex = 6;
             this.btnCompras.Text = "Compras a Proveedores";
             this.btnCompras.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(549, 253);
+            this.ClientSize = new System.Drawing.Size(631, 359);
             this.Controls.Add(this.btnCompras);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.btnVentas);

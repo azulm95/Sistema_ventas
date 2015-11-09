@@ -180,6 +180,11 @@ namespace Sistema_ventas.formularios
             }
         }
 
+        private void txttelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
 
        

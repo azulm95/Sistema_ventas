@@ -60,7 +60,7 @@
             this.btnconfiguracion});
             this.Menu4.Location = new System.Drawing.Point(0, 0);
             this.Menu4.Name = "Menu4";
-            this.Menu4.Size = new System.Drawing.Size(400, 25);
+            this.Menu4.Size = new System.Drawing.Size(507, 25);
             this.Menu4.TabIndex = 2;
             this.Menu4.Text = "Menu";
             // 
@@ -102,6 +102,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.Controls.Add(this.btnpedido);
             this.groupBox1.Controls.Add(this.btnproducto);
             this.groupBox1.Controls.Add(this.btnprove);
@@ -113,16 +114,16 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(0, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(393, 187);
+            this.groupBox1.Size = new System.Drawing.Size(507, 368);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de compra";
             // 
             // btnpedido
             // 
-            this.btnpedido.Location = new System.Drawing.Point(240, 154);
+            this.btnpedido.Location = new System.Drawing.Point(181, 305);
             this.btnpedido.Name = "btnpedido";
-            this.btnpedido.Size = new System.Drawing.Size(148, 23);
+            this.btnpedido.Size = new System.Drawing.Size(148, 41);
             this.btnpedido.TabIndex = 8;
             this.btnpedido.Text = "Realizar pedido";
             this.btnpedido.UseVisualStyleBackColor = true;
@@ -130,9 +131,10 @@
             // 
             // btnproducto
             // 
-            this.btnproducto.Location = new System.Drawing.Point(240, 66);
+            this.btnproducto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnproducto.Location = new System.Drawing.Point(202, 19);
             this.btnproducto.Name = "btnproducto";
-            this.btnproducto.Size = new System.Drawing.Size(147, 23);
+            this.btnproducto.Size = new System.Drawing.Size(118, 36);
             this.btnproducto.TabIndex = 7;
             this.btnproducto.Text = "Buscar Producto";
             this.btnproducto.UseVisualStyleBackColor = true;
@@ -140,9 +142,9 @@
             // 
             // btnprove
             // 
-            this.btnprove.Location = new System.Drawing.Point(240, 35);
+            this.btnprove.Location = new System.Drawing.Point(350, 19);
             this.btnprove.Name = "btnprove";
-            this.btnprove.Size = new System.Drawing.Size(147, 23);
+            this.btnprove.Size = new System.Drawing.Size(128, 36);
             this.btnprove.TabIndex = 6;
             this.btnprove.Text = "Agregar Proveedor";
             this.btnprove.UseVisualStyleBackColor = true;
@@ -150,61 +152,75 @@
             // 
             // ncantidad
             // 
-            this.ncantidad.Location = new System.Drawing.Point(133, 97);
+            this.ncantidad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ncantidad.Location = new System.Drawing.Point(152, 184);
             this.ncantidad.Name = "ncantidad";
-            this.ncantidad.Size = new System.Drawing.Size(49, 20);
+            this.ncantidad.Size = new System.Drawing.Size(49, 27);
             this.ncantidad.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 99);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(12, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.Size = new System.Drawing.Size(138, 19);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Cantidad solicitada";
+            this.label3.Text = "Cantidad solicitada:";
             // 
             // lblproducto
             // 
             this.lblproducto.AutoSize = true;
-            this.lblproducto.Location = new System.Drawing.Point(149, 71);
+            this.lblproducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblproducto.Location = new System.Drawing.Point(177, 132);
             this.lblproducto.Name = "lblproducto";
-            this.lblproducto.Size = new System.Drawing.Size(13, 13);
+            this.lblproducto.Size = new System.Drawing.Size(19, 20);
             this.lblproducto.TabIndex = 3;
             this.lblproducto.Text = "--";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 71);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(12, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.Size = new System.Drawing.Size(149, 19);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre del producto";
+            this.label2.Text = "Nombre del producto:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblnomprove
             // 
             this.lblnomprove.AutoSize = true;
-            this.lblnomprove.Location = new System.Drawing.Point(149, 40);
+            this.lblnomprove.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnomprove.Location = new System.Drawing.Point(177, 76);
             this.lblnomprove.Name = "lblnomprove";
-            this.lblnomprove.Size = new System.Drawing.Size(13, 13);
+            this.lblnomprove.Size = new System.Drawing.Size(19, 19);
             this.lblnomprove.TabIndex = 1;
             this.lblnomprove.Text = "--";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 40);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.label1.Location = new System.Drawing.Point(12, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(157, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre del proveedor";
+            this.label1.Text = "Nombre del proveedor:";
             // 
             // frmComprasProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 217);
+            this.ClientSize = new System.Drawing.Size(507, 386);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Menu4);
             this.Name = "frmComprasProveedores";
