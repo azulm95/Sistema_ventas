@@ -23,26 +23,22 @@ DROP TABLE IF EXISTS `tbl_factura`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tbl_factura` (
-  `id` int(11) NOT NULL,
-  `numero` bigint(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `numero` int(11) NOT NULL,
   `id_cliente` varchar(30) NOT NULL,
-  `id_proveedor` varchar(50) NOT NULL,
   `id_producto` varchar(50) NOT NULL,
-  `sub_total` decimal(10,5) NOT NULL,
+  `sub_total` varchar(20) NOT NULL,
   `iva` varchar(45) NOT NULL,
-  `total` decimal(10,5) NOT NULL,
+  `total` varchar(20) NOT NULL,
   `cantidad` int(11) NOT NULL,
-  `id_usuario` int(11) NOT NULL,
+  `id_usuario` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_cliente_idx` (`id_cliente`),
-  KEY `fk_proveedor_idx` (`id_proveedor`),
   KEY `fk_producto_idx` (`id_producto`),
   KEY `fk_usuario_idx` (`id_usuario`),
   CONSTRAINT `fk_cliente` FOREIGN KEY (`id_cliente`) REFERENCES `tbl_cliente` (`id_cliente`),
-  CONSTRAINT `fk_producto` FOREIGN KEY (`id_producto`) REFERENCES `tbl_producto` (`codigo`),
-  CONSTRAINT `fk_proveedor` FOREIGN KEY (`id_proveedor`) REFERENCES `tbl_proveedor` (`id_proveedor`),
-  CONSTRAINT `fk_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tbl_usuarios` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_producto` FOREIGN KEY (`id_producto`) REFERENCES `tbl_producto` (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,6 +47,7 @@ CREATE TABLE `tbl_factura` (
 
 LOCK TABLES `tbl_factura` WRITE;
 /*!40000 ALTER TABLE `tbl_factura` DISABLE KEYS */;
+INSERT INTO `tbl_factura` VALUES (1,1,'54212','a','48,0000','si','7,680000',4,'carlos');
 /*!40000 ALTER TABLE `tbl_factura` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -63,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-20  6:29:07
+-- Dump completed on 2015-11-12  1:09:09

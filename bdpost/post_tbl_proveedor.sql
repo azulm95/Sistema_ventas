@@ -28,8 +28,8 @@ CREATE TABLE `tbl_proveedor` (
   `apellido` varchar(50) DEFAULT NULL,
   `empresa` varchar(50) DEFAULT NULL,
   `telefono` varchar(45) DEFAULT NULL,
-  `direccion` varchar(45) DEFAULT NULL,
   `ciudad` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) NOT NULL,
   PRIMARY KEY (`id_proveedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -40,7 +40,7 @@ CREATE TABLE `tbl_proveedor` (
 
 LOCK TABLES `tbl_proveedor` WRITE;
 /*!40000 ALTER TABLE `tbl_proveedor` DISABLE KEYS */;
-INSERT INTO `tbl_proveedor` VALUES ('1','Alguien','Alguien','Empresa','123','calle 123','medellin');
+INSERT INTO `tbl_proveedor` VALUES ('1','Alguien','Alguien','Empresa','123','medellin',''),('1234','carlos','ramirez','aplisalud','1534215','medellin','azulm95@hotmail.com'),('275423','adsf','asf','azul','245454','medellin','azulm95@gmail.com');
 /*!40000 ALTER TABLE `tbl_proveedor` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-20  6:29:07
+-- Dump completed on 2015-11-12  1:09:09

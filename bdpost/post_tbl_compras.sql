@@ -28,7 +28,7 @@ CREATE TABLE `tbl_compras` (
   `id_usuario` int(11) NOT NULL,
   `id_producto` varchar(50) NOT NULL,
   `cantidad` int(11) NOT NULL,
-  `costo` decimal(10,5) NOT NULL,
+  `costo` varchar(20) NOT NULL,
   `fecha` date NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_proveedor1_idx` (`id_proveedor`),
@@ -58,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-20  6:29:07
+-- Dump completed on 2015-11-12  1:09:09

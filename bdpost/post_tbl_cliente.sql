@@ -42,6 +42,7 @@ CREATE TABLE `tbl_cliente` (
 
 LOCK TABLES `tbl_cliente` WRITE;
 /*!40000 ALTER TABLE `tbl_cliente` DISABLE KEYS */;
+INSERT INTO `tbl_cliente` VALUES ('1','cliente','apellido','empresa','calle 12378','medellin','normal','1234','algo@algo'),('123','dsf','xv','xcvzxcvxczv','cxvv','xvxc','xv','322','xvczv'),('12324','carlos','ramirez','asdf','calle123','medellin','tipo','523421','asadf'),('1233','AKHSDKJ','cznc','zxcjlcxklcjzlxk','zxclcjxlkc2e','xczclk','cxzck','836','ccksdljldsc'),('1234','assf','safdsfdsfsdgds','jghfhg','kjgjhg','ljlkjñ','kjlj','5646546','gkjgjgj'),('214324','gadhs','dsfsd','adsaf','df','ghffsdfasfda','jjhdfdfdsjfh','82632','sjh'),('54212','kljhgf','lkjhg','jh','ñlkjhg','lkjhg','ñlkjh','5432','lkjhgf'),('8376','asdas','asd','asd','fdsffasadaf','fsd','fsd','1232','sdvsd322');
 /*!40000 ALTER TABLE `tbl_cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-20  6:29:07
+-- Dump completed on 2015-11-12  1:09:09
