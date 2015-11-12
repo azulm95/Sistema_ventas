@@ -49,6 +49,7 @@ namespace Sistema_ventas.formularios
             foreach (DataRow fila in dtProductos.Rows)
             {
                 pro = new mdProducto();
+                       
                 pro.chkNomPro.Text = fila["nombre"].ToString();
                 pro.lblprecio.Text = fila["precio"].ToString();
                 pro.lblmarca.Text = fila["marca"].ToString();
@@ -62,6 +63,7 @@ namespace Sistema_ventas.formularios
                     foreach (DataRow fila in dtProductos.Rows)
                     {
                         p = new Producto1();
+                        p.lblcodigo.Text = fila["codigo"].ToString();
                         p.chkproduc.Text = fila["nombre"].ToString();
                         p.lblprec.Text = fila["precio"].ToString();
                         flpprductos.Controls.Add(p);
@@ -84,33 +86,35 @@ namespace Sistema_ventas.formularios
             this.Dispose();
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnseleccion_Click(object sender, EventArgs e)
         {
-
-            switch (origen) {
+            switch (origen)
+            {
 
                 case 1:
-            int i = 0;
-            foreach (mdProducto p in flpprductos.Controls)
-            {
-                if (p.chkNomPro.Checked == true) {
+                    int i = 0;
+                    foreach (mdProducto p in flpprductos.Controls)
+                    {
+                        if (p.chkNomPro.Checked == true)
+                        {
 
-                    DtProductos.Rows[i]["seleccion"] = "Si";
-                    DtProductos.Rows[i]["pedido"] = p.Ncantidad.Value;
-                    aceptar = true;
-                }
-                i = i + 1;
-            }
+                            DtProductos.Rows[i]["seleccion"] = "Si";
+                            DtProductos.Rows[i]["pedido"] = p.Ncantidad.Value;
+                            aceptar = true;
+                        }
+                        i = i + 1;
+                    }
 
-            if (aceptar)
-            {
-                frmVentas.factura = dtProductos;
-                this.Dispose();
-            }
-            else {
+                    if (aceptar)
+                    {
+                        frmVentas.factura = dtProductos;
+                        this.Dispose();
+                    }
+                    else
+                    {
 
-                MessageBox.Show("Debe Elegir como minimo un solo producto para agregar!");
-            }
+                        MessageBox.Show("Debe Elegir como minimo un solo producto para agregar!");
+                    }
 
                     break;
 
@@ -121,19 +125,20 @@ namespace Sistema_ventas.formularios
                     {
                         if (p.chkproduc.Checked == true)
                         {
-                            DtProductos.Rows[a]["seleccion"] = "Si";
+                            frmComprasProveedores.id_producto = p.lblcodigo.Text;
+                            frmComprasProveedores.costo = p.lblprec.Text;
                             frmComprasProveedores.nompro = dtProductos.Rows[a]["nombre"].ToString();
                             this.Dispose();
 
                         }
                         a = a + 1;
                     }
-                    
+
 
 
                     break;
 
+            }
         }
-    }
     }
 }

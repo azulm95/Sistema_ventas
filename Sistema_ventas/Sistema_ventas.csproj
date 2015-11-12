@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Correo.cs" />
     <Compile Include="Clases\Productos.cs" />
     <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="Controles\mdProducto.cs">
@@ -114,6 +115,12 @@
     <Compile Include="datos\tbl_ventas.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="formularios\frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios\frmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +151,12 @@
     <Compile Include="formularios\frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios\frmVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +183,9 @@
     <EmbeddedResource Include="Controles\Producto1.resx">
       <DependentUpon>Producto1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios\frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\frmVentas.resx">
       <DependentUpon>frmVentas.cs</DependentUpon>

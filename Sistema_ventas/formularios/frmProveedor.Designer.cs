@@ -44,6 +44,8 @@
             this.txtempresa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtcedula = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.gbpaciente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +53,7 @@
             // 
             this.txtnombre.Location = new System.Drawing.Point(116, 52);
             this.txtnombre.Name = "txtnombre";
+            this.txtnombre.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtnombre.Size = new System.Drawing.Size(292, 20);
             this.txtnombre.TabIndex = 0;
             this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
@@ -82,6 +85,8 @@
             // gbpaciente
             // 
             this.gbpaciente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gbpaciente.BackgroundImage")));
+            this.gbpaciente.Controls.Add(this.txtcedula);
+            this.gbpaciente.Controls.Add(this.label4);
             this.gbpaciente.Controls.Add(this.button2);
             this.gbpaciente.Controls.Add(this.button1);
             this.gbpaciente.Controls.Add(this.txtcorreo);
@@ -127,6 +132,7 @@
             // 
             this.txtcorreo.Location = new System.Drawing.Point(116, 212);
             this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtcorreo.Size = new System.Drawing.Size(292, 20);
             this.txtcorreo.TabIndex = 15;
             this.txtcorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcorreo_KeyPress);
@@ -147,6 +153,7 @@
             // 
             this.txttelefono.Location = new System.Drawing.Point(116, 176);
             this.txttelefono.Name = "txttelefono";
+            this.txttelefono.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txttelefono.Size = new System.Drawing.Size(292, 20);
             this.txttelefono.TabIndex = 13;
             this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
@@ -167,6 +174,7 @@
             // 
             this.txtciudad.Location = new System.Drawing.Point(116, 148);
             this.txtciudad.Name = "txtciudad";
+            this.txtciudad.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtciudad.Size = new System.Drawing.Size(292, 20);
             this.txtciudad.TabIndex = 9;
             this.txtciudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtciudad_KeyPress);
@@ -187,6 +195,7 @@
             // 
             this.txtempresa.Location = new System.Drawing.Point(116, 118);
             this.txtempresa.Name = "txtempresa";
+            this.txtempresa.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtempresa.Size = new System.Drawing.Size(292, 20);
             this.txtempresa.TabIndex = 5;
             this.txtempresa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtempresa_KeyPress);
@@ -207,9 +216,31 @@
             // 
             this.txtapellido.Location = new System.Drawing.Point(116, 85);
             this.txtapellido.Name = "txtapellido";
+            this.txtapellido.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtapellido.Size = new System.Drawing.Size(292, 20);
             this.txtapellido.TabIndex = 3;
             this.txtapellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido_KeyPress);
+            // 
+            // txtcedula
+            // 
+            this.txtcedula.Location = new System.Drawing.Point(116, 16);
+            this.txtcedula.Name = "txtcedula";
+            this.txtcedula.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtcedula.Size = new System.Drawing.Size(292, 20);
+            this.txtcedula.TabIndex = 18;
+            this.txtcedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcedula_KeyPress_1);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(28, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 18);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Identificacion";
             // 
             // frmProveedor
             // 
@@ -242,5 +273,7 @@
         private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.TextBox txtciudad;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtcedula;
+        private System.Windows.Forms.Label label4;
     }
 }

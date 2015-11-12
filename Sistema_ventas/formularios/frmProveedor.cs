@@ -26,20 +26,20 @@ namespace Sistema_ventas.formularios
 
             if (v.ValidarTexto(gbpaciente) == 0) {
                 c.Conectar();
-               
+
+                parametros.Parameters.AddWithValue("p_id_proveedor", txtcedula.Text);
                 parametros.Parameters.AddWithValue("p_nombre",txtnombre.Text);
                 parametros.Parameters.AddWithValue("p_apellido", txtapellido.Text);
                 parametros.Parameters.AddWithValue("p_empresa", txtempresa.Text);
-            
                 parametros.Parameters.AddWithValue("p_ciudad", txtciudad.Text);
-              
                 parametros.Parameters.AddWithValue("p_telefono", txttelefono.Text);
                 parametros.Parameters.AddWithValue("p_correo", txtcorreo.Text);
                 
 
                 if (c.TransaccionMysql("CrearProveedor", parametros.Parameters, CommandType.StoredProcedure)) {
-                    frmComprasProveedores.nomp = txtnombre.Text;
-                    this.Dispose();
+                    frmComprasProveedores.nomp = txtempresa.Text;
+                    frmComprasProveedores.id_proveedor = txtcedula.Text; 
+                     this.Dispose();
                 }
                 
                 c.Desconectar();
@@ -167,6 +167,12 @@ namespace Sistema_ventas.formularios
         }
 
         private void txtcorreo_KeyPress(object sender, KeyPressEventArgs e)
+            
+               {
+            
+        }
+
+        private void txtcedula_KeyPress_1(object sender, KeyPressEventArgs e)
         {
 
             if ((char.IsLetterOrDigit(e.KeyChar)) || (char.IsControl(e.KeyChar)))
@@ -179,6 +185,5 @@ namespace Sistema_ventas.formularios
                 e.Handled = true;
             }
         }
-
     }
 }

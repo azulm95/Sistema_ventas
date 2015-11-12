@@ -100,7 +100,8 @@
             // 
             this.txtclave.BackColor = System.Drawing.Color.White;
             this.txtclave.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtclave.Location = new System.Drawing.Point(6, 169);
+            this.txtclave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtclave.Location = new System.Drawing.Point(10, 169);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(199, 22);
             this.txtclave.TabIndex = 6;
@@ -110,7 +111,7 @@
             // 
             this.txtnombre.BackColor = System.Drawing.Color.White;
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtnombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtnombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombre.Location = new System.Drawing.Point(10, 64);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(192, 22);

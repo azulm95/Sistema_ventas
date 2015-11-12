@@ -31,6 +31,7 @@
             this.chkproduc = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblprec = new System.Windows.Forms.Label();
+            this.lblcodigo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // chkproduc
@@ -61,15 +62,25 @@
             this.lblprec.TabIndex = 2;
             this.lblprec.Text = "label2";
             // 
+            // lblcodigo
+            // 
+            this.lblcodigo.AutoSize = true;
+            this.lblcodigo.Location = new System.Drawing.Point(264, 16);
+            this.lblcodigo.Name = "lblcodigo";
+            this.lblcodigo.Size = new System.Drawing.Size(10, 13);
+            this.lblcodigo.TabIndex = 3;
+            this.lblcodigo.Text = "-";
+            // 
             // Producto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblcodigo);
             this.Controls.Add(this.lblprec);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chkproduc);
             this.Name = "Producto1";
-            this.Size = new System.Drawing.Size(422, 48);
+            this.Size = new System.Drawing.Size(425, 48);
             this.Load += new System.EventHandler(this.Producto1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -81,5 +92,6 @@
         public System.Windows.Forms.CheckBox chkproduc;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label lblprec;
+        public System.Windows.Forms.Label lblcodigo;
     }
 }

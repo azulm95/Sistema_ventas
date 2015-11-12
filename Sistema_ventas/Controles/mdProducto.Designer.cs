@@ -31,12 +31,12 @@
             this.chkNomPro = new System.Windows.Forms.CheckBox();
             this.lblprecio = new System.Windows.Forms.Label();
             this.lblmarca = new System.Windows.Forms.Label();
-            this.btnDescripcion = new System.Windows.Forms.Button();
             this.lblcantidad = new System.Windows.Forms.Label();
             this.Ncantidad = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblcodigo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Ncantidad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,15 +67,6 @@
             this.lblmarca.Size = new System.Drawing.Size(35, 13);
             this.lblmarca.TabIndex = 2;
             this.lblmarca.Text = "label1";
-            // 
-            // btnDescripcion
-            // 
-            this.btnDescripcion.Location = new System.Drawing.Point(621, 8);
-            this.btnDescripcion.Name = "btnDescripcion";
-            this.btnDescripcion.Size = new System.Drawing.Size(73, 31);
-            this.btnDescripcion.TabIndex = 3;
-            this.btnDescripcion.Text = "Descripcion";
-            this.btnDescripcion.UseVisualStyleBackColor = true;
             // 
             // lblcantidad
             // 
@@ -120,23 +111,32 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Precio";
             // 
+            // lblcodigo
+            // 
+            this.lblcodigo.AutoSize = true;
+            this.lblcodigo.Location = new System.Drawing.Point(637, 17);
+            this.lblcodigo.Name = "lblcodigo";
+            this.lblcodigo.Size = new System.Drawing.Size(10, 13);
+            this.lblcodigo.TabIndex = 9;
+            this.lblcodigo.Text = "-";
+            this.lblcodigo.Visible = false;
+            // 
             // mdProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblcodigo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Ncantidad);
             this.Controls.Add(this.lblcantidad);
-            this.Controls.Add(this.btnDescripcion);
             this.Controls.Add(this.lblmarca);
             this.Controls.Add(this.lblprecio);
             this.Controls.Add(this.chkNomPro);
             this.Name = "mdProducto";
             this.Size = new System.Drawing.Size(738, 48);
-            this.Load += new System.EventHandler(this.mdProducto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Ncantidad)).EndInit();
+              ((System.ComponentModel.ISupportInitialize)(this.Ncantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,11 +147,11 @@
         public System.Windows.Forms.CheckBox chkNomPro;
         public System.Windows.Forms.Label lblprecio;
         public System.Windows.Forms.Label lblmarca;
-        public System.Windows.Forms.Button btnDescripcion;
         public System.Windows.Forms.Label lblcantidad;
         public System.Windows.Forms.NumericUpDown Ncantidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label lblcodigo;
     }
 }

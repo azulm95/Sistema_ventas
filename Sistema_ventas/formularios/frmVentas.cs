@@ -329,6 +329,12 @@ namespace Sistema_ventas.formularios
 
         }
 
+        private void btnconfiguracion_Click(object sender, EventArgs e)
+        {
+            frmConfiguracion d = new frmConfiguracion();
+            d.ShowDialog();
+        }
+
 
 
 

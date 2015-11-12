@@ -351,6 +351,7 @@
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 22);
             this.btnsalir.Text = "Salir";
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // btnconfiguracion
             // 
@@ -360,6 +361,7 @@
             this.btnconfiguracion.Name = "btnconfiguracion";
             this.btnconfiguracion.Size = new System.Drawing.Size(23, 22);
             this.btnconfiguracion.Text = "Configuracion";
+            this.btnconfiguracion.Click += new System.EventHandler(this.btnconfiguracion_Click);
             // 
             // Inventario
             // 

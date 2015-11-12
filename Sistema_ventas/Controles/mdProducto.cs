@@ -17,9 +17,6 @@ namespace Sistema_ventas.Controles
             InitializeComponent();
         }
 
-        private void mdProducto_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -37,7 +37,6 @@
             this.btnconfiguracion = new System.Windows.Forms.ToolStripButton();
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
             this.btnCompras = new System.Windows.Forms.Button();
             this.Menu1.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +91,7 @@
             this.btnconfiguracion.Name = "btnconfiguracion";
             this.btnconfiguracion.Size = new System.Drawing.Size(23, 22);
             this.btnconfiguracion.Text = "Configuracion";
+            this.btnconfiguracion.Click += new System.EventHandler(this.btnconfiguracion_Click);
             // 
             // btnInventario
             // 
@@ -120,18 +120,6 @@
             this.btnVentas.UseVisualStyleBackColor = true;
             this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
-            // btnReportes
-            // 
-            this.btnReportes.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
-            this.btnReportes.Location = new System.Drawing.Point(470, 64);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(101, 90);
-            this.btnReportes.TabIndex = 4;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.UseVisualStyleBackColor = true;
-            // 
             // btnCompras
             // 
             this.btnCompras.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,7 +141,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(631, 359);
             this.Controls.Add(this.btnCompras);
-            this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.btnVentas);
             this.Controls.Add(this.btnInventario);
             this.Controls.Add(this.Menu1);
@@ -175,7 +162,6 @@
         private System.Windows.Forms.ToolStrip Menu1;
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Button btnVentas;
-        private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.ToolStripButton btnsalir;
         private System.Windows.Forms.ToolStripButton btnconfiguracion;
         private System.Windows.Forms.Button btnCompras;

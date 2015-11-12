@@ -41,7 +41,9 @@ namespace Sistema_ventas
                 this.Hide();
                 menu.setNombre(tb.Rows[0][1].ToString());
                 menu.setRol(tb.Rows[0][3].ToString());
-                menu.ShowDialog();
+                
+
+                        menu.ShowDialog();
             }
             else {
                 MessageBox.Show("Credenciales incorrectos");

@@ -131,8 +131,16 @@ namespace Sistema_ventas.formularios
         {
 
         }
-    
-    
-    
+
+        private void btnconfiguracion_Click(object sender, EventArgs e)
+        {
+            frmConfiguracion d = new frmConfiguracion();
+            d.ShowDialog();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

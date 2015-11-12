@@ -17,6 +17,8 @@ namespace Sistema_ventas.formularios
         {
             InitializeComponent();
         }
+
+        public static String gusuario;
         private String nombre;
         private String rol;
         public void setNombre(String n) {
@@ -71,7 +73,7 @@ namespace Sistema_ventas.formularios
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
-            frmComprasProveedores cp = new frmComprasProveedores;
+            frmComprasProveedores cp = new frmComprasProveedores();
             cp.setNombre(nombre);
             cp.setRol(rol);
             this.Hide();
@@ -79,6 +81,12 @@ namespace Sistema_ventas.formularios
 
 
 
+        }
+
+        private void btnconfiguracion_Click(object sender, EventArgs e)
+        {
+            frmConfiguracion d = new frmConfiguracion();
+            d.ShowDialog();
         }
     }
 }
